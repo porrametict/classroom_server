@@ -53,6 +53,8 @@ INSTALLED_APPS = [
 LOCAL_APPS = [
     # local app
     'core',
+    'student',
+    'course'
 ]
 
 INSTALLED_APPS += LOCAL_APPS
