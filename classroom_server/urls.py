@@ -19,6 +19,7 @@ from django.urls import path, include
 api_urlpatterns = [
     path('core/', include('core.urls')),
     path('student', include('student.urls')),
+    path('course', include('course.urls')),
 
 ]
 urlpatterns = [
