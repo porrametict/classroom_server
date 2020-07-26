@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from course import views as c_views
 
 api_urlpatterns = [
     path('core/', include('core.urls')),
     path('student/', include('student.urls')),
     path('course/', include('course.urls')),
+    path('course-no-paginate/', c_views.CourseListAPIView.as_view()),
 
 ]
 urlpatterns = [

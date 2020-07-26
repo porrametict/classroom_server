@@ -35,4 +35,4 @@ class CourseSerializer(serializers.ModelSerializer):
         teaching_period.day = teaching_period_data.get('day', teaching_period.day)
         teaching_period.save()
 
-        return  instance
+        return instance
