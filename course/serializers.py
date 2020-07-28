@@ -26,7 +26,7 @@ class CourseSerializer(serializers.ModelSerializer):
         teaching_period = instance.teaching_period
 
         instance.name = validated_data.get('name', instance.name)
-        instance.status = validated_data.get('teacher_name', instance.teacher_name)
+        instance.teacher_name = validated_data.get('teacher_name', instance.teacher_name)
         instance.status = validated_data.get('status', instance.status)
         instance.save()
 
