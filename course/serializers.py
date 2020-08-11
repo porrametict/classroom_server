@@ -1,6 +1,5 @@
 from course import models
 from rest_framework import serializers
-from student.serializers import StudentSerializers
 
 
 class TeachingPeriodSerializer(serializers.ModelSerializer):
@@ -11,7 +10,6 @@ class TeachingPeriodSerializer(serializers.ModelSerializer):
 
 class CourseSerializer(serializers.ModelSerializer):
     teaching_period = TeachingPeriodSerializer()
-    students = StudentSerializers(many=True)
 
     class Meta:
         fields = '__all__'

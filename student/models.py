@@ -10,7 +10,7 @@ def random_student_code():
 # Create your models here.
 class Student(models.Model):
     student_id = models.SlugField(unique=True, default=random_student_code)
-    course_id = models.ForeignKey(course_models.Course, on_delete=models.CASCADE, related_name='students')
+    course_id = models.ForeignKey(course_models.Course, on_delete=models.CASCADE)
     enroll_date = models.DateTimeField()
     name = models.CharField(max_length=255)
     contact_details = models.TextField()
