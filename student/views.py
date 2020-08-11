@@ -1,4 +1,3 @@
-
 from django_filters.rest_framework import DjangoFilterBackend
 from student import serializers, models
 from rest_framework import viewsets, filters
